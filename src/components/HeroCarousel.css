@@ -97,6 +97,10 @@
     align-items: flex-start;
   }
 
+  .hero-carousel{
+    height: max-content !important;
+  }
+
   .search-bar {
     width: 100%;
     justify-content: center;
