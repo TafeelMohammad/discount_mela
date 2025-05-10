@@ -36,7 +36,7 @@
   }
   
   .dot.active {
-    background-color: black;
+    background-color: red;
     box-shadow: 0 0 0 2px #333;
   }
   
