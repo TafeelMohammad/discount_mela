@@ -110,7 +110,7 @@ const PromoCardGrid = () => {
       {/* Divider Container between slider and promo cards */}
       <Box sx={{ width: '100%', bgcolor: 'green', py: 2, my: 4 }}>
         <Typography variant="h5" align="center" color="white">
-          TOP DISCOUNT RETAILERS
+          TOP DISCOUNT RETAILERS...
         </Typography>
       </Box>
 
