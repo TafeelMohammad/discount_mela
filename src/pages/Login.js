@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
@@ -7,15 +8,23 @@ const Login = () => {
     password: ""
   });
   const [successMessage, setSuccessMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log("Login Data:", formData);
+
+    // Simulate login success
     setSuccessMessage("Login successful!");
-    setFormData({ email: "", password: "" }); // Reset form
+
+    // Redirect after a brief delay
+    setTimeout(() => {
+      navigate("/home"); // 👈 redirects to your /home route
+    }, 1000);
   };
 
   return (
