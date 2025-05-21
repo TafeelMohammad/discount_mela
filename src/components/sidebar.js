@@ -13,7 +13,7 @@ const menuItems = [
     subCategories: ['Fruits', 'Vegetables', 'Snacks'],
   },
   {
-    name: "Men's Fashion",
+    name: "Men's Fashions",
     subCategories: ['Shirts', 'Jeans', 'Shoes'],
   },
   {
