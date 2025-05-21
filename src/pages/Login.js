@@ -6,6 +6,7 @@ const Login = () => {
     email: "",
     password: ""
   });
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,7 +14,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Data:", formData);
-    // You'd typically call your API here
+    setSuccessMessage("Login successful!");
+    setFormData({ email: "", password: "" }); // Reset form
   };
 
   return (
@@ -41,6 +43,7 @@ const Login = () => {
           />
           <button type="submit" className="login-button">Login</button>
         </form>
+        {successMessage && <p className="success-message">{successMessage}</p>}
       </div>
     </div>
   );
