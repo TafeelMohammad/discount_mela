@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3219693.css",
+    "main.js": "/static/js/main.bcc058cb.js",
+    "static/js/453.f0af4b54.chunk.js": "/static/js/453.f0af4b54.chunk.js",
+    "static/media/myntra.png": "/static/media/myntra.578deb2e04a96e365e14.png",
+    "static/media/img1.jpg": "/static/media/img1.4abbc09e26594260c3f0.jpg",
+    "static/media/img2.jpg": "/static/media/img2.4abbc09e26594260c3f0.jpg",
+    "static/media/img3.jpg": "/static/media/img3.4abbc09e26594260c3f0.jpg",
+    "static/media/img4.jpg": "/static/media/img4.4abbc09e26594260c3f0.jpg",
+    "static/media/img5.jpg": "/static/media/img5.4abbc09e26594260c3f0.jpg",
+    "static/media/img6.jpg": "/static/media/img6.4abbc09e26594260c3f0.jpg",
+    "static/media/img7.jpg": "/static/media/img7.4abbc09e26594260c3f0.jpg",
+    "static/media/img8.jpg": "/static/media/img8.4abbc09e26594260c3f0.jpg",
+    "static/media/logo.png": "/static/media/logo.78435db4c59e8973d105.png",
+    "static/media/amazon.png": "/static/media/amazon.a8a95572dcb4e2d25dc6.png",
+    "static/media/Flipkart-logo.jpg": "/static/media/Flipkart-logo.3e8381ca34e20e25bcec.jpg",
+    "static/media/ajio.png": "/static/media/ajio.0ec5fd20e0406f80eea0.png",
+    "static/media/shopsy.webp": "/static/media/shopsy.cc632fff1806aea2fa3b.webp",
+    "index.html": "/index.html",
+    "main.c3219693.css.map": "/static/css/main.c3219693.css.map",
+    "main.bcc058cb.js.map": "/static/js/main.bcc058cb.js.map",
+    "453.f0af4b54.chunk.js.map": "/static/js/453.f0af4b54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3219693.css",
+    "static/js/main.bcc058cb.js"
+  ]
+}

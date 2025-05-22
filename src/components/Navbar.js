@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
-  return (
-    <nav>
-      <Link to="/signup">Signup</Link> | <Link to="/login">Login</Link>
-    </nav>
+  return React.createElement(
+    "nav",
+    { className: "navbar" },
+    React.createElement(
+      React.Fragment,
+      null,
+      React.createElement(Link, { className: "nav-link", to: "/signup" }, "Signup"),
+      React.createElement("span", { className: "separator" }, " | "),
+      React.createElement(Link, { className: "nav-link", to: "/login" }, "Login")
+    )
   );
 };
 
