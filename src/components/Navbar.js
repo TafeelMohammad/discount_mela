@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/images/discount-mela-logo.png";
 
-const logo = logo;
-
 const Navbar = () => {
   return React.createElement(
     "nav",
