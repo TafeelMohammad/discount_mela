@@ -39,6 +39,7 @@
 @media (min-width: 768px) {
   .content {
     margin-left: 250px;
+    display: contents;
   }
 }
 
