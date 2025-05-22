@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/images/discount-mela-logo.png";
+import logo from "../assets/images/discount-mela-logo-bg.png";
 
 const Navbar = () => {
   return React.createElement(
