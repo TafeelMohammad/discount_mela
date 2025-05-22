@@ -22,7 +22,7 @@ const Navbar = () => {
       "div",
       { className: "nav-center" },
       React.createElement("img", {
-        src: logo,
+        src: "",
         alt: "Discount Mela Logo",
         className: "logo"
       }),
