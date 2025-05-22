@@ -11,7 +11,7 @@ const Navbar = () => {
     // Left section: Signup / Login
     React.createElement(
       "div",
-      { className: "nav-left" },
+      { className: "nav-right" },
       React.createElement(Link, { className: "nav-link", to: "/signup" }, "Signup"),
       React.createElement("span", { className: "separator" }, " | "),
       React.createElement(Link, { className: "nav-link", to: "/login" }, "Login")
@@ -30,11 +30,11 @@ const Navbar = () => {
     ),
 
     // Right section: Welcome text
-    React.createElement(
-      "div",
-      { className: "nav-right" },
-      React.createElement("span", { className: "nav-text" }, "Welcome to Discount Mela!!!")
-    )
+    // React.createElement(
+    //   "div",
+    //   { className: "nav-right" },
+    //   React.createElement("span", { className: "nav-text" }, "Welcome to Discount Mela!!!")
+    // )
   );
 };
 
