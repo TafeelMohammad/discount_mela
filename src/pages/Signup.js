@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./signup.css";
-import logo from "../assets/images/discount-mela-logo-bg.png";
+import logo from "../assets/images/logo.png";
 
 const Signup = () => {
   const [formData, setFormData] = useState({

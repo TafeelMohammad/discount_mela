@@ -10,6 +10,7 @@ import {
 import Sidebar from './components/sidebar';
 import Navbar from './components/Navbar';
 import PromoCardGrid from './components/PromoCardGrid';
+import logo from "../assets/images/logo.png";
 import HeroCarousel from './components/HeroCarousel';
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
