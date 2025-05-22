@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   return React.createElement(
@@ -22,7 +21,7 @@ const Navbar = () => {
       "div",
       { className: "nav-center" },
       React.createElement("img", {
-        src: "",
+        src: '/logo.png',
         alt: "Discount Mela Logo",
         className: "logo"
       }),
