@@ -26,7 +26,7 @@ const Navbar = () => {
     React.createElement(
       "div",
       { className: "nav-right" },
-      React.createElement("span", { className: "nav-text" }, "Welcome to Discount Mela!")
+      React.createElement("span", { className: "nav-text" }, "Welcome to Discount Mela!!!")
     )
   );
 };
