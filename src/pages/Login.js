@@ -8,6 +8,7 @@ const Login = () => {
     password: ""
   });
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
   const handleChange = (e) =>
@@ -16,15 +17,22 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("Login Data:", formData);
+    const users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Simulate login success
-    setSuccessMessage("Login successful!");
+    const matchedUser = users.find(
+      (user) =>
+        user.email === formData.email &&
+        user.password === formData.password
+    );
 
-    // Redirect after a brief delay
-    setTimeout(() => {
-      navigate("/home"); // 👈 redirects to your /home route
-    }, 1000);
+    if (matchedUser) {
+      setSuccessMessage("Login successful!");
+      setErrorMessage("");
+      setTimeout(() => navigate("/home"), 1000);
+    } else {
+      setErrorMessage("Invalid email or password.");
+      setSuccessMessage("");
+    }
   };
 
   return (
@@ -53,6 +61,7 @@ const Login = () => {
           <button type="submit" className="login-button">Login</button>
         </form>
         {successMessage && <p className="success-message">{successMessage}</p>}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
   );

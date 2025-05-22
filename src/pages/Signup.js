@@ -8,15 +8,31 @@ const Signup = () => {
     password: ""
   });
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Signup Data:", formData);
+
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const userExists = users.find(
+      (user) => user.email === formData.email
+    );
+
+    if (userExists) {
+      setErrorMessage("User with this email already exists.");
+      return;
+    }
+
+    users.push(formData);
+    localStorage.setItem("users", JSON.stringify(users));
+
     setSuccessMessage("Signup successful!");
-    setFormData({ username: "", email: "", password: "" }); // Reset form
+    setFormData({ username: "", email: "", password: "" });
+    setErrorMessage("");
   };
 
   return (
@@ -54,6 +70,7 @@ const Signup = () => {
           <button type="submit" className="signup-button">Signup</button>
         </form>
         {successMessage && <p className="success-message">{successMessage}</p>}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
   );
