@@ -2,11 +2,39 @@
   background-color: #333;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   font-family: Arial, sans-serif;
 }
 
+/* Left links section */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Center logo */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Right text */
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Logo image */
+.logo {
+  height: 40px;
+  max-width: 120px;
+}
+
+/* Links */
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -21,4 +49,11 @@
 .separator {
   color: #ccc;
   margin: 0 0.5rem;
+}
+
+/* Right side text */
+.nav-text {
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1rem;
 }
